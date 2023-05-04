@@ -1,0 +1,20 @@
+---
+// social media
+const twitter = "golamrabbiazad";
+const linkedin = "golamrabbiazad";
+const instagram = "golamrabbiazad";
+
+const { platform, username } = Astro.props;
+---
+
+<a href={`http://www.${platform}.com/${username}`}>{platform}</a>
+
+<style>
+  a {
+    padding: 1rem 0.5rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+</style>
